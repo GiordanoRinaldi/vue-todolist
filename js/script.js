@@ -39,12 +39,16 @@ const app = new Vue({
                this.newTodoInput = ""
             };
         },
-        removeTodo: function(todoInex) {
-            this.todos.splice(todoInex, 1);
+        removeTodo: function(todoIndex) {
+            console.log(todoIndex)
+            this.todos.splice(todoIndex, 1);
         },
-        ceckTodo: function(todoInex){
-            this.todos[todoInex]["ceck"] = true;
+        ceckTodo: function(todoIndex){
+            console.log(todoIndex);
+            this.todos[todoIndex].ceck = true
         },
+
+        
 
 
     }
