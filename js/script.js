@@ -42,6 +42,10 @@ const app = new Vue({
         removeTodo: function(todoInex) {
             this.todos.splice(todoInex, 1);
         },
+        ceckTodo: function(todoInex){
+            this.todos[todoInex]["ceck"] = true;
+        },
+
 
     }
     
