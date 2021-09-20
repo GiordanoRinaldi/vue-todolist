@@ -29,7 +29,7 @@
             <div class="to-do-list">
                 <ul v-if="todos.length > 0">
                     <li v-for="(todo, index) in todos" :class="todo.ceck ? 'cecked' : '' "   :key="index">
-                        <span v-if="todos[index].modifyTodo == true">
+                        <span @keyup.enter="modifytext(index)" v-if="todos[index].modifyTodo == true">
                             <input type="text" v-model="todo.todo"> 
                         </span>
                         <span v-else>
