@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Lato', sans-serif;
+    font-weight: 400;
+}
+
+#root {
+    max-width: 1200px; 
+    margin: auto;
+}
+
+header{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 30%;
+    margin: auto;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+input, .btn-add {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 10px ;
+    border: 1px solid black;
+
+}
+
+input:focus-visible {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/*bacground lightgray text align center list style none border bottom + homevr da aggiungere */
+
+.to-do-list {
+    margin-top: 30px;
+    background-color: rgb(221, 221, 221);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 10px 5px
+}
+
+li:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.fas.fa-times:hover, .btn-add {
+    cursor: pointer;
+}
