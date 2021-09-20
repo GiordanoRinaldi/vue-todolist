@@ -16,23 +16,27 @@ const app = new Vue({
             {
                 todo: "Fare i compiti",
                 ceck: false,
+                modifyTodo: false,
             },
             {
                 todo: "Fare la spesa",
                 ceck: false,
+                modifyTodo: false,
             },
             {
                 todo:"Fare il bucato",
                 ceck: false,
+                modifyTodo: false,
             },
         ],
-        newTodoInput: ""
+        newTodoInput: "",
     },
     methods: {
         addInTodo: function() {
             let newTodo = {
                 todo : this.newTodoInput,
-                ceck : false
+                ceck : false,
+                modifyTodo: false
             }
             if (this.newTodoInput != "") {
                this.todos.push(newTodo); 
@@ -47,6 +51,14 @@ const app = new Vue({
             console.log(todoIndex);
             this.todos[todoIndex].ceck = true
         },
+        modifytext: function(todoIndex){
+            if(this.todos[todoIndex].modifyTodo == false) {
+                this.todos[todoIndex].modifyTodo = true
+            } else if (this.todos[todoIndex].modifyTodo == true){
+                this.todos[todoIndex].modifyTodo = false
+            }
+            
+        }
 
         
 
