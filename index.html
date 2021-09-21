@@ -21,7 +21,7 @@
                 <img src="img/logo.png" alt="logo">
             </div>
             <div class="to-do-add">
-                <input v-model="newTodoInput" @keyup.enter="addInTodo()" type="text" placeholder="Nuovo Todo">
+                <input class="input-newtodo" v-model="newTodoInput" @keyup.enter="addInTodo()" type="text" placeholder="Nuovo Todo">
                 <button @click="addInTodo" class="btn-add">AGGIUNGI</button>
             </div>
         </header>

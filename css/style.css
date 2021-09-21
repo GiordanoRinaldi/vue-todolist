@@ -28,8 +28,11 @@ header{
     max-width: 100%;
 }
 
-input, .btn-add {
+.input-newtodo, .btn-add {
     margin-top: 15px;
+}
+
+input, .btn-add {
     padding: 10px 20px;
     border-radius: 10px ;
     border: 1px solid black;
@@ -70,6 +73,6 @@ li:hover {
     background-color: rgb(245, 245, 245);
 }
 
-.fas.fa-times:hover, .btn-add {
+.fas.fa-times:hover, .btn-add, .fas.fa-check {
     cursor: pointer;
 }

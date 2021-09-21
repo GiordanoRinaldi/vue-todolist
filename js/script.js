@@ -44,12 +44,15 @@ const app = new Vue({
             };
         },
         removeTodo: function(todoIndex) {
-            console.log(todoIndex)
             this.todos.splice(todoIndex, 1);
         },
         ceckTodo: function(todoIndex){
-            console.log(todoIndex);
-            this.todos[todoIndex].ceck = true
+            if(this.todos[todoIndex].ceck == false){
+                this.todos[todoIndex].ceck = true
+            } else if (this.todos[todoIndex].ceck == true){
+                this.todos[todoIndex].ceck = false
+            }
+            
         },
         modifytext: function(todoIndex){
             if(this.todos[todoIndex].modifyTodo == false) {
